@@ -1,0 +1,184 @@
+@import url('./hero-landing-tokens.css');
+
+.hero-landing-container .hero-landing-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-landing .hero-landing-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: var(--hl-min-height);
+  background-color: var(--hl-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-landing .hero-landing-content {
+  position: relative;
+  padding: var(--hl-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--hl-gap);
+}
+
+.hero-landing .hero-landing-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-landing .hero-landing-image picture,
+.hero-landing .hero-landing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-landing .hero-landing-text {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-landing .hero-landing-text h1 {
+  font-family: var(--hl-heading-font-family);
+  font-size: var(--hl-heading-font-size);
+  line-height: var(--hl-heading-line-height);
+  font-weight: var(--hl-heading-font-weight);
+  text-transform: var(--hl-heading-text-transform);
+  background: var(--hl-heading-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--sn-color-dark);
+  margin: 0;
+  max-width: var(--hl-heading-max-width);
+}
+
+.hero-landing .hero-landing-text p {
+  font-family: var(--hl-desc-font-family);
+  font-size: var(--hl-desc-font-size);
+  line-height: var(--hl-desc-line-height);
+  font-weight: var(--hl-desc-font-weight);
+  color: var(--hl-desc-color);
+  max-width: var(--hl-desc-max-width);
+  margin: 0;
+}
+
+.hero-landing .hero-landing-text .button-wrapper {
+  margin-top: var(--hl-gap);
+}
+
+.hero-landing .hero-landing-text a.button {
+  font-family: var(--hl-button-font-family);
+  font-size: var(--hl-button-font-size);
+  font-weight: var(--hl-button-font-weight);
+  line-height: var(--hl-button-line-height);
+  letter-spacing: var(--hl-button-letter-spacing);
+  text-transform: var(--hl-button-text-transform);
+  background-color: var(--hl-button-background);
+  color: var(--hl-button-color);
+  border: none;
+  border-radius: var(--hl-button-border-radius);
+  padding: var(--hl-button-padding);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero-landing .hero-landing-text a.button:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* Sidebar */
+.hero-landing .hero-landing-sidebar {
+  display: none;
+}
+
+/* Sidebar Card */
+.hero-landing .hero-landing-card {
+  position: relative;
+  border-radius: var(--hl-card-border-radius);
+  overflow: hidden;
+}
+
+.hero-landing .hero-landing-card-image {
+  width: 100%;
+  aspect-ratio: 270 / 220;
+}
+
+.hero-landing .hero-landing-card-image picture,
+.hero-landing .hero-landing-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--hl-card-border-radius);
+}
+
+.hero-landing .hero-landing-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--hl-card-gradient);
+  border-radius: var(--hl-card-border-radius);
+  pointer-events: none;
+}
+
+.hero-landing .hero-landing-card-text {
+  position: relative;
+  z-index: 1;
+  padding: var(--sn-spacing-sm);
+}
+
+.hero-landing .hero-landing-card-text p:first-child {
+  font-family: var(--hl-card-source-font-family);
+  font-size: var(--hl-card-source-font-size);
+  font-weight: var(--hl-card-source-font-weight);
+  line-height: var(--hl-card-source-line-height);
+  color: var(--hl-card-source-color);
+  margin: 0 0 var(--sn-spacing-xs);
+}
+
+.hero-landing .hero-landing-card-text p:last-child {
+  font-family: var(--hl-card-title-font-family);
+  font-size: var(--hl-card-title-font-size);
+  font-weight: var(--hl-card-title-font-weight);
+  line-height: var(--hl-card-title-line-height);
+  color: var(--hl-card-title-color);
+  margin: 0;
+}
+
+/* Desktop layout */
+@media (width >= 900px) {
+  .hero-landing .hero-landing-inner {
+    grid-template-columns: 1fr var(--hl-sidebar-width);
+  }
+
+  .hero-landing .hero-landing-text h1 {
+    font-size: var(--hl-heading-font-size-desktop);
+    line-height: var(--hl-heading-line-height-desktop);
+  }
+
+  .hero-landing .hero-landing-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hl-sidebar-gap);
+    padding: var(--hl-padding);
+    background-color: var(--sn-color-dark);
+    z-index: 1;
+  }
+
+  .hero-landing .hero-landing-sidebar::before {
+    content: 'Today';
+    font-family: var(--hl-badge-font-family);
+    font-size: var(--hl-badge-font-size);
+    font-weight: var(--hl-badge-font-weight);
+    line-height: var(--hl-badge-line-height);
+    color: var(--hl-badge-color);
+    background: var(--hl-badge-background);
+    border-radius: var(--hl-badge-border-radius);
+    padding: var(--hl-badge-padding);
+    text-transform: var(--hl-badge-text-transform);
+    align-self: flex-end;
+  }
+}

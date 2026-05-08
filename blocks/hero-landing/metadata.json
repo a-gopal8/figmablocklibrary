@@ -1,0 +1,21 @@
+{
+  "variantName": "hero-landing",
+  "baseBlock": "hero",
+  "description": "Hero landing section with gradient text heading, basketball player image, description, CTA button, and a dark sidebar with Today news cards",
+  "characteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "hero-landing",
+    "imagePattern": "large",
+    "contentPattern": {
+      "structure": "hero-text-image-sidebar-cards",
+      "buttonCount": 1,
+      "imageCount": 3
+    }
+  },
+  "usage": {
+    "pagesUsing": ["hero-landing"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-08T10:15:00.000Z"
+  }
+}

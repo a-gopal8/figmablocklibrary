@@ -1,0 +1,68 @@
+.hero-landing {
+  /* ===== LAYOUT ===== */
+  --hl-min-height: 683px;
+  --hl-padding: var(--sn-spacing-xl);
+  --hl-gap: var(--sn-spacing-lg);
+  --hl-background: var(--sn-color-light);
+  --hl-border-radius: var(--sn-radius-md);
+
+  /* ===== HEADING ===== */
+  --hl-heading-font-family: var(--sn-font-heading);
+  --hl-heading-font-size: 60px;
+  --hl-heading-font-size-desktop: 80px;
+  --hl-heading-line-height: 62px;
+  --hl-heading-line-height-desktop: 75px;
+  --hl-heading-font-weight: 700;
+  --hl-heading-text-transform: uppercase;
+  --hl-heading-gradient: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  --hl-heading-max-width: 470px;
+
+  /* ===== DESCRIPTION ===== */
+  --hl-desc-font-family: var(--sn-font-body);
+  --hl-desc-font-size: 18px;
+  --hl-desc-line-height: 25px;
+  --hl-desc-font-weight: 400;
+  --hl-desc-color: var(--sn-color-dark);
+  --hl-desc-max-width: 365px;
+
+  /* ===== CTA BUTTON ===== */
+  --hl-button-font-family: var(--sn-font-body);
+  --hl-button-font-size: 20px;
+  --hl-button-font-weight: 700;
+  --hl-button-line-height: 38px;
+  --hl-button-letter-spacing: 1.8px;
+  --hl-button-text-transform: uppercase;
+  --hl-button-background: var(--sn-color-dark);
+  --hl-button-color: var(--sn-color-light);
+  --hl-button-border-radius: var(--sn-radius-md);
+  --hl-button-padding: 12px 32px;
+
+  /* ===== SIDEBAR ===== */
+  --hl-sidebar-width: 270px;
+  --hl-sidebar-gap: var(--sn-spacing-md);
+
+  /* ===== SIDEBAR - TODAY BADGE ===== */
+  --hl-badge-font-family: var(--sn-font-body);
+  --hl-badge-font-size: 20px;
+  --hl-badge-font-weight: 500;
+  --hl-badge-line-height: 26px;
+  --hl-badge-color: var(--sn-color-border);
+  --hl-badge-background: var(--sn-color-light);
+  --hl-badge-border-radius: var(--sn-radius-sm);
+  --hl-badge-padding: 4px 16px;
+  --hl-badge-text-transform: capitalize;
+
+  /* ===== SIDEBAR - NEWS CARDS ===== */
+  --hl-card-border-radius: var(--sn-radius-md);
+  --hl-card-source-font-family: var(--sn-font-body);
+  --hl-card-source-font-size: 10px;
+  --hl-card-source-font-weight: 500;
+  --hl-card-source-line-height: 10px;
+  --hl-card-source-color: rgb(38 38 38 / 60%);
+  --hl-card-title-font-family: var(--sn-font-heading);
+  --hl-card-title-font-size: 16px;
+  --hl-card-title-font-weight: 500;
+  --hl-card-title-line-height: 20px;
+  --hl-card-title-color: var(--sn-color-dark);
+  --hl-card-gradient: linear-gradient(0deg, #f2f2f2 0%, rgb(242 242 242 / 0%) 100%);
+}
