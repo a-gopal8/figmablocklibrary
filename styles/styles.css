@@ -19,6 +19,36 @@
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
+  /* Sport News - Colors */
+  --sn-color-dark: #262626;
+  --sn-color-dark-60: rgba(38, 38, 38, 0.6);
+  --sn-color-gray: #696868;
+  --sn-color-light: #ebeef3;
+  --sn-color-light-bg: #f9fafc;
+  --sn-color-border: #b8c2ce;
+  --sn-color-white: #ffffff;
+  --sn-color-black: #000000;
+
+  /* Sport News - Typography */
+  --sn-font-heading: 'DM Sans', sans-serif;
+  --sn-font-body: 'DM Sans', sans-serif;
+
+  /* Sport News - Spacing */
+  --sn-spacing-xs: 6px;
+  --sn-spacing-sm: 10px;
+  --sn-spacing-md: 16px;
+  --sn-spacing-lg: 24px;
+  --sn-spacing-xl: 32px;
+  --sn-spacing-xxl: 40px;
+
+  /* Sport News - Border Radius */
+  --sn-radius-sm: 3px;
+  --sn-radius-md: 6px;
+  --sn-radius-lg: 12px;
+
+  /* Sport News - Section max width */
+  --sn-max-width: 1170px;
+
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;

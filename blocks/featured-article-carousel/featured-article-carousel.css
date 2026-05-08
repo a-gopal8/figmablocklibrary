@@ -1,0 +1,164 @@
+@import url('./featured-article-carousel-tokens.css');
+
+.featured-article-carousel .carousel-container {
+  position: relative;
+}
+
+.featured-article-carousel .carousel-track {
+  position: relative;
+  width: 100%;
+  border-radius: var(--fac-border-radius);
+  overflow: hidden;
+  min-height: var(--fac-min-height);
+}
+
+.featured-article-carousel .carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.featured-article-carousel .carousel-slide.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.featured-article-carousel .carousel-slide-image {
+  position: absolute;
+  inset: 0;
+}
+
+.featured-article-carousel .carousel-slide-image picture,
+.featured-article-carousel .carousel-slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-article-carousel .carousel-track::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--fac-overlay-bg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.featured-article-carousel .carousel-slide-content {
+  position: relative;
+  z-index: 2;
+  padding: var(--fac-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: calc(var(--fac-min-height) - 80px);
+}
+
+.featured-article-carousel .carousel-slide-content p:first-child {
+  font-family: var(--fac-badge-font-family);
+  font-size: var(--fac-badge-font-size);
+  line-height: var(--fac-badge-line-height);
+  font-weight: var(--fac-badge-font-weight);
+  color: var(--fac-badge-color);
+  border: var(--fac-badge-border-width) solid var(--fac-badge-border-color);
+  border-radius: var(--fac-badge-border-radius);
+  padding: var(--fac-badge-padding);
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 auto;
+}
+
+.featured-article-carousel .carousel-slide-content p:nth-child(2) {
+  font-family: var(--fac-source-font-family);
+  font-size: var(--fac-source-font-size);
+  font-weight: var(--fac-source-font-weight);
+  line-height: var(--fac-source-line-height);
+  color: var(--fac-source-color);
+  margin: 0 0 var(--sn-spacing-sm);
+}
+
+.featured-article-carousel .carousel-slide-content h2 {
+  font-family: var(--fac-heading-font-family);
+  font-size: var(--fac-heading-font-size);
+  font-weight: var(--fac-heading-font-weight);
+  line-height: var(--fac-heading-line-height);
+  color: var(--fac-heading-color);
+  text-transform: var(--fac-heading-text-transform);
+  margin: 0 0 var(--fac-heading-margin-bottom);
+}
+
+.featured-article-carousel .carousel-slide-content p:last-child {
+  font-family: var(--fac-desc-font-family);
+  font-size: var(--fac-desc-font-size);
+  font-weight: var(--fac-desc-font-weight);
+  line-height: var(--fac-desc-line-height);
+  color: var(--fac-desc-color);
+  max-width: var(--fac-desc-max-width);
+  margin: 0;
+}
+
+/* Pagination */
+.featured-article-carousel .carousel-pagination {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--fac-pagination-gap);
+  padding: var(--sn-spacing-lg) 0;
+}
+
+.featured-article-carousel .carousel-btn {
+  width: var(--fac-pagination-button-size);
+  height: var(--fac-pagination-button-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--fac-pagination-button-bg);
+  color: var(--fac-pagination-button-color);
+  border: none;
+  border-radius: var(--fac-pagination-button-radius);
+  cursor: pointer;
+  font-size: var(--fac-pagination-number-size);
+}
+
+.featured-article-carousel .carousel-btn:hover {
+  opacity: 0.8;
+}
+
+.featured-article-carousel .carousel-numbers {
+  display: flex;
+  align-items: center;
+  gap: var(--fac-pagination-gap);
+}
+
+.featured-article-carousel .carousel-number {
+  width: var(--fac-pagination-number-width);
+  height: var(--fac-pagination-number-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--fac-pagination-number-color);
+  border: none;
+  border-radius: var(--fac-pagination-number-radius);
+  cursor: pointer;
+  font-family: var(--sn-font-body);
+  font-size: var(--fac-pagination-number-size);
+  font-weight: 500;
+}
+
+.featured-article-carousel .carousel-number.active {
+  background: var(--fac-pagination-number-active-bg);
+  color: var(--fac-pagination-number-active-color);
+}
+
+@media (width >= 900px) {
+  .featured-article-carousel .carousel-slide-content h2 {
+    font-size: var(--fac-heading-font-size-desktop);
+    line-height: var(--fac-heading-line-height-desktop);
+  }
+}

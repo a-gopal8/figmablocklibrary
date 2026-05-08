@@ -1,0 +1,21 @@
+{
+  "variantName": "featured-article-carousel",
+  "baseBlock": "featured-article",
+  "description": "Full-bleed image carousel with category badge, source/date, heading, description text and pagination controls",
+  "characteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero-carousel",
+    "imagePattern": "large",
+    "contentPattern": {
+      "structure": "image-overlay-text-pagination",
+      "buttonCount": 0,
+      "imageCount": 1
+    }
+  },
+  "usage": {
+    "pagesUsing": ["featured-article-carousel"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-08T09:50:00.000Z"
+  }
+}

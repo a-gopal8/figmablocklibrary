@@ -1,0 +1,60 @@
+.featured-article-carousel {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --fac-min-height: 618px;
+  --fac-border-radius: var(--sn-radius-md);
+  --fac-padding: var(--sn-spacing-xl);
+  --fac-overlay-bg: rgb(0 0 0 / 50%);
+
+  /* ===== BADGE ===== */
+  --fac-badge-font-family: var(--sn-font-body);
+  --fac-badge-font-size: 20px;
+  --fac-badge-font-weight: 500;
+  --fac-badge-line-height: 26px;
+  --fac-badge-color: var(--sn-color-white);
+  --fac-badge-border-color: var(--sn-color-white);
+  --fac-badge-border-width: 1px;
+  --fac-badge-border-radius: var(--sn-radius-sm);
+  --fac-badge-padding: 6px 26px;
+
+  /* ===== SOURCE/DATE LINE ===== */
+  --fac-source-font-family: var(--sn-font-body);
+  --fac-source-font-size: 18px;
+  --fac-source-font-weight: 400;
+  --fac-source-line-height: 18px;
+  --fac-source-color: var(--sn-color-light-bg);
+
+  /* ===== HEADING ===== */
+  --fac-heading-font-family: var(--sn-font-heading);
+  --fac-heading-font-size: 28px;
+  --fac-heading-font-weight: 700;
+  --fac-heading-line-height: 35px;
+  --fac-heading-color: var(--sn-color-light-bg);
+  --fac-heading-text-transform: uppercase;
+  --fac-heading-margin-bottom: var(--sn-spacing-md);
+
+  /* ===== DESCRIPTION ===== */
+  --fac-desc-font-family: var(--sn-font-body);
+  --fac-desc-font-size: 18px;
+  --fac-desc-font-weight: 500;
+  --fac-desc-line-height: 25px;
+  --fac-desc-color: var(--sn-color-white);
+  --fac-desc-max-width: 470px;
+
+  /* ===== PAGINATION ===== */
+  --fac-pagination-gap: 8px;
+  --fac-pagination-button-size: 40px;
+  --fac-pagination-button-bg: var(--sn-color-dark);
+  --fac-pagination-button-color: var(--sn-color-white);
+  --fac-pagination-button-radius: var(--sn-radius-sm);
+  --fac-pagination-number-size: 18px;
+  --fac-pagination-number-color: var(--sn-color-dark);
+  --fac-pagination-number-active-color: var(--sn-color-white);
+  --fac-pagination-number-active-bg: var(--sn-color-dark);
+  --fac-pagination-number-radius: 50%;
+  --fac-pagination-number-width: 32px;
+  --fac-pagination-number-height: 32px;
+
+  /* ===== RESPONSIVE - DESKTOP ===== */
+  --fac-heading-font-size-desktop: 36px;
+  --fac-heading-line-height-desktop: 43px;
+}

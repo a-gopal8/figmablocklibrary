@@ -1,0 +1,54 @@
+.club-ranking {
+  background-color: var(--sn-color-light);
+  border-radius: var(--sn-radius-md);
+  padding: var(--sn-spacing-lg);
+}
+
+.club-ranking .club-ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sn-font-heading);
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--sn-color-dark);
+}
+
+.club-ranking .club-ranking-table th {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  padding: var(--sn-spacing-xs) var(--sn-spacing-sm);
+  border-bottom: 0.5px solid var(--sn-color-border);
+}
+
+.club-ranking .club-ranking-table th:first-child,
+.club-ranking .club-ranking-table th:nth-child(2) {
+  text-align: left;
+}
+
+.club-ranking .club-ranking-table td {
+  padding: var(--sn-spacing-sm);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.club-ranking .club-ranking-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+  width: 20px;
+}
+
+.club-ranking .club-ranking-table td:nth-child(2) {
+  text-align: left;
+  font-weight: 600;
+}
+
+.club-ranking .club-ranking-table tbody tr:nth-child(even) {
+  background-color: var(--sn-color-light);
+}
+
+.club-ranking .club-ranking-table tbody tr {
+  border-bottom: 0.5px solid var(--sn-color-border);
+}

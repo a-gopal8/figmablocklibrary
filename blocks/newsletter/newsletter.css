@@ -1,0 +1,94 @@
+.newsletter-container {
+  background-color: var(--sn-color-light);
+  padding: var(--sn-spacing-xxl) 0;
+}
+
+.newsletter-container .newsletter-wrapper {
+  max-width: var(--sn-max-width);
+  margin: 0 auto;
+  padding: 0 var(--sn-spacing-lg);
+}
+
+.newsletter .newsletter-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sn-spacing-xl);
+  align-items: center;
+}
+
+.newsletter .newsletter-title h2,
+.newsletter .newsletter-title h3 {
+  font-family: var(--sn-font-heading);
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 var(--sn-spacing-xl);
+}
+
+.newsletter .newsletter-form {
+  display: flex;
+  align-items: stretch;
+  max-width: 400px;
+  border: 1px solid var(--sn-color-dark);
+  border-radius: var(--sn-radius-md);
+  overflow: hidden;
+}
+
+.newsletter .newsletter-form input {
+  flex: 1;
+  border: none;
+  padding: 14px 16px;
+  font-family: var(--sn-font-body);
+  font-size: 16px;
+  color: var(--sn-color-dark);
+  background: transparent;
+  outline: none;
+}
+
+.newsletter .newsletter-form input::placeholder {
+  color: var(--sn-color-dark-60);
+}
+
+.newsletter .newsletter-submit {
+  background-color: var(--sn-color-dark);
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter .newsletter-submit:hover {
+  background-color: #333;
+}
+
+.newsletter .newsletter-image {
+  line-height: 0;
+}
+
+.newsletter .newsletter-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--sn-radius-md);
+}
+
+@media (width >= 900px) {
+  .newsletter .newsletter-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .newsletter .newsletter-title h2,
+  .newsletter .newsletter-title h3 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
