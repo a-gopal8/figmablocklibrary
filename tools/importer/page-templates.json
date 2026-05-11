@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://wknd-trendsetters.site/"],
+      "description": "WKND Trendsetters homepage with hero, featured content, and promotional sections",
+      "blocks": [
+        {
+          "name": "hero-editorial",
+          "instances": ["header.section.secondary-section"]
+        },
+        {
+          "name": "columns-featured",
+          "instances": ["section.section:nth-of-type(1) > .container > .grid-layout"]
+        },
+        {
+          "name": "cards-gallery",
+          "instances": ["section.secondary-section:nth-of-type(2) .grid-layout.desktop-4-column"]
+        },
+        {
+          "name": "tabs-testimonial",
+          "instances": [".tabs-wrapper"]
+        },
+        {
+          "name": "cards-article",
+          "instances": ["section.section.secondary-section:nth-of-type(2) .grid-layout.desktop-4-column"]
+        },
+        {
+          "name": "accordion-faq",
+          "instances": [".faq-list"]
+        },
+        {
+          "name": "hero-cta",
+          "instances": ["section.section.inverse-section"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "header.section.secondary-section",
+          "style": null,
+          "blocks": ["hero-editorial"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Featured Article",
+          "selector": "main > section.section:nth-of-type(1)",
+          "style": null,
+          "blocks": ["columns-featured"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Gallery",
+          "selector": "main > section.section.secondary-section:nth-of-type(1)",
+          "style": "grey",
+          "blocks": ["cards-gallery"],
+          "defaultContent": [".utility-text-align-center h2", ".utility-text-align-center p"]
+        },
+        {
+          "id": "section-4",
+          "name": "Testimonials",
+          "selector": "main > section.section:nth-of-type(2)",
+          "style": null,
+          "blocks": ["tabs-testimonial"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Latest Articles",
+          "selector": "main > section.section.secondary-section:nth-of-type(2)",
+          "style": "grey",
+          "blocks": ["cards-article"],
+          "defaultContent": [".utility-text-align-center h2", ".utility-text-align-center p"]
+        },
+        {
+          "id": "section-6",
+          "name": "FAQ",
+          "selector": "main > section.section:nth-of-type(3)",
+          "style": null,
+          "blocks": ["accordion-faq"],
+          "defaultContent": ["h2.h2-heading", "p.subheading"]
+        },
+        {
+          "id": "section-7",
+          "name": "CTA Banner",
+          "selector": "section.section.inverse-section",
+          "style": null,
+          "blocks": ["hero-cta"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

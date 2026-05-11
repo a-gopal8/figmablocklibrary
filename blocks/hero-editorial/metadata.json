@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-editorial",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-11T10:43:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd-trendsetters.site/",
+    "originPage": "homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "purpose": "fashion-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + 2 CTAs + image grid",
+    "buttonCount": 2,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "editorial homepages",
+      "fashion/lifestyle landing pages",
+      "pages with two-column hero layout (text + images)"
+    ],
+    "notSuitableFor": [
+      "pages with single background image hero",
+      "dark-themed hero sections",
+      "minimal text-only heroes"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T10:43:00.000Z"
+  }
+}
