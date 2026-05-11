@@ -1,6 +1,9 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
+import { createOptimizedPicture, loadCSS } from '../../scripts/aem.js';
 
 export default function decorate(block) {
+  if (block.classList.contains('sport-news')) {
+    loadCSS(`${window.hlx.codeBasePath}/blocks/cards/cards-sport-news.css`);
+  }
   /* change to ul, li */
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {

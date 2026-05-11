@@ -46,7 +46,7 @@
   font-style: italic;
   text-transform: uppercase;
   color: var(--sn-color-border);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgb(255 255 255 / 70%);
   border-radius: var(--sn-radius-md);
   text-align: center;
   padding: var(--sn-spacing-md);

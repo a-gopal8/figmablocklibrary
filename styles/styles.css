@@ -21,13 +21,13 @@
 
   /* Sport News - Colors */
   --sn-color-dark: #262626;
-  --sn-color-dark-60: rgba(38, 38, 38, 0.6);
+  --sn-color-dark-60: rgb(38 38 38 / 60%);
   --sn-color-gray: #696868;
   --sn-color-light: #ebeef3;
   --sn-color-light-bg: #f9fafc;
   --sn-color-border: #b8c2ce;
-  --sn-color-white: #ffffff;
-  --sn-color-black: #000000;
+  --sn-color-white: #fff;
+  --sn-color-black: #000;
 
   /* Sport News - Typography */
   --sn-font-heading: 'DM Sans', sans-serif;
