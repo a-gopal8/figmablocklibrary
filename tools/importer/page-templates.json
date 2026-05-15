@@ -4,94 +4,150 @@
   },
   "templates": [
     {
-      "name": "homepage",
-      "urls": ["https://wknd-trendsetters.site/"],
-      "description": "WKND Trendsetters homepage with hero, featured content, and promotional sections",
+      "name": "iphone-product-page",
+      "urls": ["https://www.apple.com/uk/iphone-17/"],
+      "description": "Apple iPhone 17 product landing page with hero, features, specs, and promotional sections",
       "blocks": [
         {
-          "name": "hero-editorial",
-          "instances": ["header.section.secondary-section"]
+          "name": "hero-product",
+          "instances": ["section.section-welcome"]
         },
         {
-          "name": "columns-featured",
-          "instances": ["section.section:nth-of-type(1) > .container > .grid-layout"]
+          "name": "carousel-showcase",
+          "instances": ["section.section-highlights .aap-media-card-gallery", "section.section-cameras .aap-media-card-gallery", "section.section-shared-features .aap-media-card-gallery"]
         },
         {
-          "name": "cards-gallery",
-          "instances": ["section.secondary-section:nth-of-type(2) .grid-layout.desktop-4-column"]
+          "name": "columns-stats",
+          "instances": ["section.section-performance"]
         },
         {
-          "name": "tabs-testimonial",
-          "instances": [".tabs-wrapper"]
+          "name": "columns-compare",
+          "instances": ["section.section-upgrade", "section.section-contrast"]
         },
         {
-          "name": "cards-article",
-          "instances": ["section.section.secondary-section:nth-of-type(2) .grid-layout.desktop-4-column"]
+          "name": "cards-product",
+          "instances": ["section.section-accessories"]
         },
         {
-          "name": "accordion-faq",
-          "instances": [".faq-list"]
+          "name": "columns-banner",
+          "instances": ["section.section-upgrade-banner"]
         },
         {
-          "name": "hero-cta",
-          "instances": ["section.section.inverse-section"]
+          "name": "cards-icon",
+          "instances": ["section.section-incentive", "section.section-environment", "section.section-values"]
         }
       ],
       "sections": [
         {
           "id": "section-1",
-          "name": "Hero",
-          "selector": "header.section.secondary-section",
+          "name": "Welcome Hero",
+          "selector": "section.section-welcome",
           "style": null,
-          "blocks": ["hero-editorial"],
+          "blocks": ["hero-product"],
           "defaultContent": []
         },
         {
           "id": "section-2",
-          "name": "Featured Article",
-          "selector": "main > section.section:nth-of-type(1)",
-          "style": null,
-          "blocks": ["columns-featured"],
+          "name": "Highlights",
+          "selector": "section.section-highlights",
+          "style": "grey",
+          "blocks": ["carousel-showcase"],
           "defaultContent": []
         },
         {
           "id": "section-3",
-          "name": "Gallery",
-          "selector": "main > section.section.secondary-section:nth-of-type(1)",
+          "name": "Design",
+          "selector": "section.section-product-viewer",
           "style": "grey",
-          "blocks": ["cards-gallery"],
-          "defaultContent": [".utility-text-align-center h2", ".utility-text-align-center p"]
+          "blocks": [],
+          "defaultContent": []
         },
         {
           "id": "section-4",
-          "name": "Testimonials",
-          "selector": "main > section.section:nth-of-type(2)",
+          "name": "Cameras",
+          "selector": "section.section-cameras",
           "style": null,
-          "blocks": ["tabs-testimonial"],
+          "blocks": ["carousel-showcase"],
           "defaultContent": []
         },
         {
           "id": "section-5",
-          "name": "Latest Articles",
-          "selector": "main > section.section.secondary-section:nth-of-type(2)",
-          "style": "grey",
-          "blocks": ["cards-article"],
-          "defaultContent": [".utility-text-align-center h2", ".utility-text-align-center p"]
+          "name": "Performance",
+          "selector": "section.section-performance",
+          "style": null,
+          "blocks": ["columns-stats"],
+          "defaultContent": []
         },
         {
           "id": "section-6",
-          "name": "FAQ",
-          "selector": "main > section.section:nth-of-type(3)",
-          "style": null,
-          "blocks": ["accordion-faq"],
-          "defaultContent": ["h2.h2-heading", "p.subheading"]
+          "name": "Shared Features",
+          "selector": "section.section-shared-features",
+          "style": "grey",
+          "blocks": ["carousel-showcase"],
+          "defaultContent": []
         },
         {
           "id": "section-7",
-          "name": "CTA Banner",
-          "selector": "section.section.inverse-section",
+          "name": "Upgrade Comparison",
+          "selector": "section.section-upgrade",
           "style": null,
-          "blocks": ["hero-cta"],
+          "blocks": ["columns-compare"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Accessories",
+          "selector": "section.section-accessories",
+          "style": null,
+          "blocks": ["cards-product"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "Upgrade Banner",
+          "selector": "section.section-upgrade-banner",
+          "style": "grey",
+          "blocks": ["columns-banner"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-10",
+          "name": "Incentives",
+          "selector": "section.section-incentive",
+          "style": "grey",
+          "blocks": ["cards-icon"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-11",
+          "name": "Product Lineup",
+          "selector": "section.section-contrast",
+          "style": "grey",
+          "blocks": ["columns-compare"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-12",
+          "name": "Environment",
+          "selector": "section.section-environment",
+          "style": "grey",
+          "blocks": ["cards-icon"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-13",
+          "name": "Values",
+          "selector": "section.section-values",
+          "style": "grey",
+          "blocks": ["cards-icon"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-14",
+          "name": "Site Index",
+          "selector": "section.section-index",
+          "style": "grey",
+          "blocks": [],
           "defaultContent": []
         }
       ]

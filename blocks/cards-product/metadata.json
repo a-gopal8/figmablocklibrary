@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-product",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-11T11:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.apple.com/uk/iphone-17/",
+    "originPage": "iPhone 17 product overview page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-accessories",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description per card",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product accessory showcases",
+      "product feature cards with images",
+      "3-column product grids"
+    ],
+    "notSuitableFor": [
+      "article listing cards",
+      "icon-based cards without large images",
+      "image-only galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/uk/iphone-17/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T11:38:00.000Z"
+  }
+}

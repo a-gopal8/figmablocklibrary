@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-product",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-11T11:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.apple.com/uk/iphone-17/",
+    "originPage": "iPhone 17 product overview page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "eyebrow + heading + product image + pricing + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product overview pages",
+      "product launch pages with hero image",
+      "pages with eyebrow + tagline + product image + pricing"
+    ],
+    "notSuitableFor": [
+      "editorial or blog hero sections",
+      "dark-themed hero banners",
+      "hero sections without product images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/uk/iphone-17/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T11:38:00.000Z"
+  }
+}

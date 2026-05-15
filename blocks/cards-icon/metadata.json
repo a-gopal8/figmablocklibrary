@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-icon",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-11T11:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.apple.com/uk/iphone-17/",
+    "originPage": "iPhone 17 product overview page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "compact",
+    "purpose": "icon-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + headline + description + optional link per card",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "icon-based feature/benefit cards",
+      "sustainability/values sections with icons",
+      "incentive/benefit highlight cards"
+    ],
+    "notSuitableFor": [
+      "product cards with large photos",
+      "article listing cards",
+      "image gallery cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/uk/iphone-17/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T11:38:00.000Z"
+  }
+}

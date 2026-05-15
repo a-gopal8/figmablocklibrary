@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-stats",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-11T11:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.apple.com/uk/iphone-17/",
+    "originPage": "iPhone 17 product overview page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "performance-stats",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "stat value + stat label per column",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "performance metrics display",
+      "specification highlights side-by-side",
+      "stat tiles with large numbers and labels"
+    ],
+    "notSuitableFor": [
+      "image-heavy side-by-side layouts",
+      "editorial content columns",
+      "columns with long-form text"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/uk/iphone-17/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T11:38:00.000Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-showcase",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-05-11T11:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.apple.com/uk/iphone-17/",
+    "originPage": "iPhone 17 product overview page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "spacious",
+    "purpose": "feature-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image/video + text caption per slide",
+    "buttonCount": 0,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product feature highlight galleries",
+      "media card galleries with image + caption",
+      "horizontal scrolling feature showcases"
+    ],
+    "notSuitableFor": [
+      "text-only carousels",
+      "testimonial sliders",
+      "image-only photo galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/uk/iphone-17/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T11:38:00.000Z"
+  }
+}

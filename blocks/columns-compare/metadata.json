@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-compare",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-11T11:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.apple.com/uk/iphone-17/",
+    "originPage": "iPhone 17 product overview page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-comparison",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "comparison tiles with image + spec text per column",
+    "buttonCount": 0,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product comparison sections",
+      "feature-by-feature upgrade comparisons",
+      "side-by-side spec comparisons with images"
+    ],
+    "notSuitableFor": [
+      "editorial content layouts",
+      "image galleries",
+      "text-only column layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/uk/iphone-17/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-11T11:38:00.000Z"
+  }
+}

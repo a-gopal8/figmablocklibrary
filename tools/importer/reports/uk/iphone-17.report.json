@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.apple.com/uk/iphone-17/",
+  "path": "uk/iphone-17",
+  "timestamp": "2026-05-11T11:57:21.875Z",
+  "title": "iPhone 17 - Apple (UK)",
+  "template": "iphone-product-page",
+  "blocks": [
+    "hero-product",
+    "carousel-showcase",
+    "columns-stats",
+    "columns-compare",
+    "columns-compare",
+    "cards-product",
+    "columns-banner",
+    "cards-icon",
+    "cards-icon",
+    "cards-icon"
+  ]
+}
